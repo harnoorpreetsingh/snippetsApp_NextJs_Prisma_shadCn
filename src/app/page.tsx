@@ -4,6 +4,7 @@ import Link from "next/link";
 export default async function Home() {
 
   const snippets = await prisma.snippet.findMany();
+
   console.log(snippets)
   return (
     <div className="">
